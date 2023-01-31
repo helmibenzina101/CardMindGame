@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+
+
+<!--<img id="myImage" src="pic_bulboff.gif" style="width:100px" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">-->
+<img src="images.jpeg" id="0" style="width:100px;height:100px;" onclick="reverse(event)">
+<img src="images.jpeg" id="1" style="width:100px;height:100px;" onclick="reverse(event)">
+<img src="images.jpeg" id="2" style="width:100px;height:100px;" onclick="reverse(event)"><br></br>
+<img src="images.jpeg" id="3" style="width:100px;height:100px;" onclick="reverse(event)">
+<img src="images.jpeg" id="4" style="width:100px;height:100px;" onclick="reverse(event)">
+<img src="images.jpeg" id="5" style="width:100px;height:100px;" onclick="reverse(event)">
+<script>
+    const t=["cat.jpeg","dog.jpeg","dog.jpeg","cow.jpeg","cow.jpeg","cat.jpeg"];
+function reverse(event) {
+    document.getElementById(event.target.id).src=t[event.target.id];
+}
+</script>
+
+
+</body>
+</html>
